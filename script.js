@@ -5,7 +5,7 @@ const banner = document.querySelector('.adv');
 const liBook2 = book[0].querySelectorAll('li');
 const liBook5 = book[5].querySelectorAll('li');
 const liBook6 = book[2].querySelectorAll('li');
-const newСhapterBook6 = liBook6[8].cloneNode(true);
+const newСhapterBook6 = liBook6[8].cloneNode();
 
 book[0].before(book[1]);
 book[3].before(book[4]);
@@ -24,6 +24,5 @@ liBook5[3].before(liBook5[9]);
 liBook5[6].before(liBook5[2]);
 liBook5[8].before(liBook5[5]);
 
-newСhapterBook6.innerHTML = 'Глава 8: За пределами ES6'
+newСhapterBook6.innerHTML = 'Глава 8: За пределами ES6';
 liBook6[8].after(newСhapterBook6);
-
