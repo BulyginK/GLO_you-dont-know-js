@@ -1,11 +1,11 @@
 const book = document.querySelectorAll('.book');
 const body = document.querySelector('body');
-const title = document.querySelectorAll('[target="_blank"]')
+const title = document.querySelectorAll('[target="_blank"]');
 
 // 1.Восстановить порядок книг
-book[0].before(book[1])
-book[3].before(book[4])
-book[5].after(book[2])
+book[0].before(book[1]);
+book[3].before(book[4]);
+book[5].after(book[2]);
 
 // 2.Заменить картинку заднего фона на другую из папки image
 body.style.backgroundImage = 'url(./image/you-dont-know-js.jpg)';
